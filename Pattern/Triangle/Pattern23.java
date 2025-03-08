@@ -21,5 +21,6 @@ public class Pattern23 {
             num--;
             System.out.println();
         }
+        sc.close();
     }
 }

@@ -51,6 +51,6 @@ public class FindDuplicate {
         System.out.println(result);
 
 
-
+        sc.close();
     }
 }

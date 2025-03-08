@@ -14,5 +14,6 @@ public class NumberRight{
             }
             System.out.println(" ");
         }
+        sc.close();
     }
 }

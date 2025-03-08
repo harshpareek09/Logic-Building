@@ -13,13 +13,15 @@ public class DuplicateWordsAndNumberOccur {
             for(int j =i+1;j<result.length;j++){
                 if(result[i].equals(result[j])){
                     count++;
-                    result[j] = "0";
+                    result[j] = "False";
                     
                 }
             }
-            if(count>1 && result[i]!= "0")
+            if(count>1 && result[i]!= "False")
                 System.out.println(result[i]+": "+count);
         }
+
+        
 
 
     }

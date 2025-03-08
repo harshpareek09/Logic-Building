@@ -27,5 +27,6 @@ public class AllPairsOfTarget {
                 }
             }
         }
+        sc.close();
     }
 }

@@ -26,6 +26,7 @@ public class MissingNumber {
         }
 
         System.out.println(result);
+        sc.close();
 
     }
 }

@@ -2,25 +2,23 @@ package Pattern.Triangle;
 
 import java.util.Scanner;
 
-public class Pattern24 {
+public class Pattern49 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter row: ");
+    Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a row: ");
         int row = sc.nextInt();
-        
 
         for(int i =1;i<=row;i++){
-            //Space
-            for(int j =1;j<i;j++){
+            char ch = 65;
+            for(int j =1;j<=row-i;j++){
                 System.out.print(" ");
             }
-            //Numbers
-            for(int k =row;k>=i;k--){
-                System.out.print(k+" ");
+            for(int j =1;j<=i;j++){
+                System.out.print(ch+" ");
+                ch++;
             }
             System.out.println();
         }
         sc.close();
-
     }
 }

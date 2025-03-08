@@ -37,5 +37,6 @@ public class Pattern16 {
             System.out.println();
             space--;
         }
+        sc.close();
     }
 }

@@ -23,5 +23,6 @@ public class ArrowNumber {
             System.out.println();
             star--;
         }
+        sc.close();
     }
 }

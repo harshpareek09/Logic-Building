@@ -23,5 +23,6 @@ public class Pattern12 {
             System.out.println();
             space--;
         }
+        sc.close();
     }
 }
