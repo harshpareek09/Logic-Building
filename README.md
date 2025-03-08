@@ -21,5 +21,4 @@ This repository contains all the **coding problems, solutions, and learnings** f
 
 ---
 
-## 📂 Folder Structure  
 
