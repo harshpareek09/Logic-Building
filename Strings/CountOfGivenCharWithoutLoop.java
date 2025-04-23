@@ -15,5 +15,8 @@ public class CountOfGivenCharWithoutLoop {
         String newStr = str.replace(targetChar,"");
 
         System.out.println("Count of \""+targetChar+"\" is: "+(str.length()-newStr.length()));
+
+        sc.close();
+        
     }
 }

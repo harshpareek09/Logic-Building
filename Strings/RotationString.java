@@ -25,5 +25,6 @@ public class RotationString {
                 System.out.println("String one");
             }
         }
+        sc.close();
     }
 }

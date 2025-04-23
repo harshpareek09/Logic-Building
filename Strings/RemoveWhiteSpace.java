@@ -19,5 +19,6 @@ public class RemoveWhiteSpace {
         }
         System.out.println("Input string: "+str);
         System.out.println("Removed space string: "+rem_space);
+        sc.close();
     }
 }

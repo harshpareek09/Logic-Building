@@ -24,6 +24,8 @@ public class EachCharacterCount {
             }
         }
 
+        sc.close();
+
     }
 
 }

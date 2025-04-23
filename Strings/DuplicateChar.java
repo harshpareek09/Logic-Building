@@ -4,21 +4,35 @@ public class DuplicateChar {
     public static void main(String[] args) {
         String str = "Butter Better";
 
-        //Conert into Lowercase
+        // Convert to lowercase for uniformity
         str = str.toLowerCase();
 
-        for(int i =0;i<str.length();i++){
-            boolean flag = false;
+        for (int i = 0; i < str.length(); i++) {
+            boolean isDuplicate = false;
             char ch = str.charAt(i);
-                for(int j = i+1;j<str.length();j++){
-                    if(ch == str.charAt(j)){
-                        flag =true;
-                        break;
-                    }
+            boolean isPrinted = false;
+
+            // Check if this character appears again in the remaining string
+            for (int j = i + 1; j < str.length(); j++) {
+                if (ch == str.charAt(j)) {
+                    isDuplicate = true;
+                    break;
                 }
-                if(flag == true){
-                    System.out.print("Duplicate element is: "+ch+" ");
+            }
+
+            // Check if this character has already been printed
+            for (int j = 0; j < i; j++) {  
+                if (str.charAt(j) == ch) {
+                    isPrinted = true;
+                    break;
                 }
+            }
+
+            // Print the character only if it's a duplicate and not already printed
+            if (isDuplicate == true && isPrinted == false) {
+                System.out.println("Duplicate character: "+ch);
+            }
         }
+        
     }
 }

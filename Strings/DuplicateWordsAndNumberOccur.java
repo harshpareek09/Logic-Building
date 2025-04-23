@@ -1,5 +1,5 @@
 package Strings;
-import java.util.Scanner;
+
 
 public class DuplicateWordsAndNumberOccur {
     public static void main(String[] args) {
