@@ -24,5 +24,31 @@ public class ReversePreserveSpace{
         }
         System.out.println("Without Reverse: "+str);
         System.out.println("With Reverse and Preserve Space: "+reverse);
+
+                    /*
+        String str = "I am not a String";
+        int start = 0;
+        char[] charArray = str.toCharArray();
+        int end = str.length()-1;
+        while(start<end){
+            if(charArray[start] == ' '){
+                charArray[start] = ' ';
+                start++;
+            }else if (charArray[end] == ' ') {
+                end--;
+            }
+            else{
+                char tempChar = charArray[start];
+                charArray[start] = charArray[end];
+                charArray[end] = tempChar;
+                start++;
+                end--;
+            }
+        }
+        for(char ch : charArray){
+            System.out.print(ch);
+        }
+            */
+
     }
 } 
