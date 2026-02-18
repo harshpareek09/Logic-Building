@@ -4,27 +4,15 @@ import java.util.Scanner;
 public class RotationString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a String 1: ");
-        String string_1= sc.next();
-        System.out.print("Enter a String 2: ");
-        String string_2 = sc.next();
+        String str1 = "JavaJ2eeStrutsHibernate";
+        String str2 = "StrutsHibernateJavaJ2ee";
 
-        if(string_1.length() != string_2.length()){
-            System.out.println("String 1 is not a rotation of string 2");
-        }
-        else{
-            int flag =1;
-            for(int i =0;i<string_1.length();i++){
-                if(string_1.charAt(i) != string_2.charAt(i)){
-                    flag = 0;
-                    break;
-                }
+       String result = str1+str1;
+       if(result.contains(str1)){
+           System.out.println("Rotation of string");
+       }
 
-            }
-            if(flag == 1){
-                System.out.println("String one");
-            }
-        }
-        sc.close();
+
+
     }
 }
