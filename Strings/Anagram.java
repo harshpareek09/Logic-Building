@@ -42,5 +42,38 @@ public class Anagram {
                 System.out.println(str_1+" is NOT Anagram of "+str_2);
             }
         }
+
+
+        /*
+          String str1 = "silent";
+        String str2 = "listen";
+
+        if(str1.length() != str2.length()){
+            System.out.println("Not an Anagram");
+        }else{
+            int freqOne[] = new int[256];
+            int freqTwo[] = new int[256];
+            for(int i =0;i<str1.length();i++){
+                char ch = str1.charAt(i);
+                freqOne[ch]++;
+            }
+            for(int i = 0;i<str2.length();i++){
+                char ch = str2.charAt(i);
+                freqTwo[ch]++;
+            }
+            boolean flag = true;
+            for(int i = 0;i<freqOne.length;i++){
+                if(freqOne[i] != freqTwo[i]){
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag){
+                System.out.println("Anagram String");
+            }else{
+                System.out.println("Not a anagram");
+            }
+        }  
+        */
     }
 }
